@@ -1,0 +1,54 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slowFloat {
+  0%,100% {
+    transform: translateY(0) rotate(7deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(4deg);
+  }
+}
+@keyframes orbitPulse {
+  0%,100% {
+    opacity: .45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .9;
+    transform: scale(1.04);
+  }
+}
+.hero-art-card {
+  animation: slowFloat 6s ease-in-out infinite;
+}
+.hero-orbit {
+  animation: orbitPulse 7s ease-in-out infinite;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .75s ease,transform .75s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    scroll-behavior: auto!important;
+    animation-duration: .01ms!important;
+    transition-duration: .01ms!important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

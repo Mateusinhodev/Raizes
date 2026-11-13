@@ -1,0 +1,277 @@
+@media(max-width:1100px) {
+  .section-pad {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .main-nav {
+    gap: 15px;
+  }
+  .main-nav a {
+    font-size: 11px;
+  }
+  .people-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .culture-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .culture-card {
+    height: 380px;
+  }
+  .hero {
+    grid-template-columns: 1fr  .8fr;
+  }
+  .hero-art {
+    transform: scale(.85);
+  }
+}
+@media(max-width:760px) {
+  .site-header {
+    height: 70px;
+    padding: 0 5%;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+  }
+  .menu-toggle span {
+    width: 17px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #17120f;
+    padding: 18px 6%;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid #493a2b;
+  }
+  .main-nav.ativo {
+    display: flex;
+  }
+  .main-nav a {
+    padding: 13px 0;
+    border-bottom: 1px solid #382c22;
+    font-size: 13px;
+  }
+  .access-button {
+    margin-left: auto;
+    margin-right: 12px;
+  }
+  .section-pad {
+    padding: 75px 6%;
+  }
+  .hero {
+    display: block;
+    padding-top: 78px;
+    padding-bottom: 95px;
+    min-height: auto;
+  }
+  .hero-art {
+    height: 360px;
+    margin-top: 20px;
+    transform: scale(.85);
+  }
+  .hero-stats {
+    gap: 22px;
+    margin-top: 48px;
+  }
+  .hero-stats strong {
+    font-size: 21px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .scroll-cue {
+    left: 6%;
+  }
+  .intro-band {
+    padding: 20px 6%;
+    display: block;
+  }
+  .intro-band p {
+    font-size: 17px;
+  }
+  .intro-band span {
+    display: block;
+    margin-top: 8px;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 35px;
+  }
+  .section-heading h2 {
+    font-size: 43px;
+  }
+  .section-intro {
+    margin-top: 20px;
+  }
+  .history-layout,.resistance-photo-row,.gallery-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .history-image {
+    height: 350px;
+  }
+  .history-text h3 {
+    font-size: 25px;
+  }
+  .timeline-wrap {
+    margin-top: 65px;
+    padding: 25px 18px;
+  }
+  .timeline-top {
+    display: block;
+  }
+  .timeline-top>p {
+    margin-top: 10px;
+  }
+  .timeline-tabs {
+    overflow-x: auto;
+  }
+  .time-tab {
+    white-space: nowrap;
+    padding: 12px;
+  }
+  .culture-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .culture-card {
+    height: 350px;
+  }
+  .culture-overlay {
+    padding: 18px 14px;
+  }
+  .culture-overlay h3 {
+    font-size: 19px;
+  }
+  .culture-overlay p {
+    font-size: 10px;
+  }
+  .people-grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+  }
+  .person-photo {
+    height: 210px;
+  }
+  .person-info {
+    padding: 14px;
+  }
+  .person-info h3 {
+    font-size: 17px;
+  }
+  .person-info p {
+    font-size: 10px;
+    min-height: 85px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .value-card {
+    min-height: 0;
+  }
+  .resistance-photo-row img {
+    height: 260px;
+  }
+  .reflection {
+    padding: 25px 18px;
+    margin-top: 60px;
+  }
+  .reflection h3 {
+    font-size: 22px;
+  }
+  .three-stage {
+    height: 390px;
+  }
+  .gallery-photo-strip {
+    gap: 8px;
+  }
+  .gallery-photo-strip img {
+    height: 120px;
+  }
+  .gallery-photo-strip figcaption {
+    font-size: 9px;
+  }
+  .closing-section {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .closing-section h2 {
+    font-size: 42px;
+  }
+  .site-footer {
+    padding: 25px 6%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .site-footer p {
+    order: 3;
+    width: 100%;
+  }
+  .footer-credit {
+    order: 2;
+    width: 100%;
+    text-align: left;
+  }
+  .modal-box {
+    padding: 32px 25px;
+  }
+}
+@media(max-width:420px) {
+  .brand {
+    font-size: 14px;
+  }
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+  .hero h1 {
+    font-size: 43px;
+  }
+  .hero-art {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+  .culture-card {
+    height: 390px;
+  }
+  .people-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .person-photo {
+    height: 175px;
+  }
+  .person-info h3 {
+    font-size: 15px;
+  }
+  .person-info p {
+    min-height: 105px;
+  }
+  .gallery-photo-strip img {
+    height: 95px;
+  }
+  .gallery-photo-strip figcaption {
+    font-size: 8px;
+  }
+  .hero-stats {
+    gap: 14px;
+  }
+  .hero-stats span {
+    font-size: 8px;
+  }
+}
